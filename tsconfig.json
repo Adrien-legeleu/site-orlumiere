@@ -17,8 +17,10 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".", // Définit la racine du projet
     "paths": {
-      "@/*": ["./src/*"]
+      "@components/*": ["components/*"], // Alias pour le dossier components
+      "@src/*": ["src/*"] // Alias pour le dossier src (facultatif)
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
