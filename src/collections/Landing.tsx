@@ -15,8 +15,8 @@ export function Landing() {
       ),
       value: "product",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-orange-200 to-orange-100">
-          <p>Collier</p>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-bl from-orange-200 to-orange-100">
+          <h3 className="text-center text-4xl tracking-widest">Nos Colliers</h3>
 
           <AppleCardsCarouselDemo />
         </div>
@@ -28,8 +28,8 @@ export function Landing() {
       ),
       value: "services",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-orange-200 to-orange-100">
-          <p>Bagues</p>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-bl from-orange-200 to-orange-100">
+          <h3 className="text-center text-4xl tracking-widest">Nos Bagues</h3>
           <AppleCardsCarouselDemo />
         </div>
       ),
@@ -40,8 +40,10 @@ export function Landing() {
       ),
       value: "playground",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-orange-200 to-orange-100">
-          <p>Bracelets</p>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-bl from-orange-200 to-orange-100">
+          <h3 className="text-center text-4xl tracking-widest">
+            Nos blacelets
+          </h3>
           <AppleCardsCarouselDemo />
         </div>
       ),
@@ -52,8 +54,8 @@ export function Landing() {
       ),
       value: "content",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-orange-200 to-orange-100">
-          <p>Montres</p>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-bl from-orange-200 to-orange-100">
+          <h3 className="text-center text-4xl tracking-widest">Nos Montres</h3>
           <AppleCardsCarouselDemo />
         </div>
       ),
@@ -64,8 +66,8 @@ export function Landing() {
       ),
       value: "random",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-orange-200 to-orange-100">
-          <p>Random tab</p>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-bl from-orange-200 to-orange-100">
+          <h3 className="text-center text-4xl tracking-widest">Tendances</h3>
           <AppleCardsCarouselDemo />
         </div>
       ),
@@ -73,7 +75,7 @@ export function Landing() {
   ];
 
   return (
-    <div className="h-full [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start mt-32 ">
+    <div className="h-full [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start pt-32 ">
       <Tabs tabs={tabs} />
     </div>
   );
@@ -85,10 +87,7 @@ export function AppleCardsCarouselDemo() {
   ));
 
   return (
-    <div className="w-full h-full p-5">
-      <h2 className="max-w-4xl pl-4 mx-auto text-center md:text-3xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-        Nos produits tendances
-      </h2>
+    <div className="w-full ">
       <Carousel items={cards} />
     </div>
   );

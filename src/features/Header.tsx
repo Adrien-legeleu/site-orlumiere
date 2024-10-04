@@ -14,7 +14,7 @@ import { cn } from "lib/utils";
 
 export const Header = () => {
   return (
-    <div className="w-full absolute top-0 left-0 py-4 px-8 flex items-center justify-between">
+    <div className="w-full z-50 absolute top-0 left-0 py-4 px-8 flex items-center justify-between">
       <h1>Or&Lumière</h1>
       <div>
         <Navbar className="top-2" />
@@ -42,7 +42,6 @@ function Navbar({ className }: { className?: string }) {
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Collections">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
-            <Link href="/collections">idoisdoiodioidos</Link>
             <ProductItem
               title="Collier"
               href="/collections"

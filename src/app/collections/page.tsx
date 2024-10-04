@@ -4,7 +4,7 @@ import { Header } from "@src/features/Header";
 
 export default function Collection() {
   return (
-    <div className="w-full h-full">
+    <div className="h-full">
       <Header />
       <Landing />
       <Footer />
