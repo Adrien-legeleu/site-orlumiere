@@ -9,7 +9,7 @@ import React, {
 
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
-import { MoveLeft, MoveRightIcon } from "lucide-react";
+import { MoveLeft, MoveRight } from "lucide-react";
 import { useOutsideClick } from "./hooks/use-outside-click";
 import { cn } from "lib/utils";
 
@@ -134,14 +134,14 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             onClick={scrollLeft}
             disabled={!canScrollLeft}
           >
-            <MoveLeft />
+            <MoveLeft className="dark:text-black" />
           </button>
           <button
             className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
             onClick={scrollRight}
             disabled={!canScrollRight}
           >
-            <MoveRightIcon />
+            <MoveRight className="dark:text-black" />
           </button>
         </div>
       </div>
@@ -198,16 +198,16 @@ export const Card = ({
         className="rounded-xl bg-gray-100 dark:bg-neutral-900 h-64 w-56  cursor-default overflow-hidden flex flex-col items-start justify-start relative z-10"
       >
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
-        <div className="relative z-40 p-8">
+        <div className="relative z-40 p-8 flex items-center h-full justify-between flex-col">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
-            className="text-white text-sm md:text-base font-medium font-sans text-left"
+            className="text-white text-sm md:text-base text-center text-shadow-lg font-medium font-sans"
           >
             {card.category}
           </motion.p>
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
-            className="text-white text-xl md:text-2xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
+            className="text-white text-base md:text-lg text-left font-semibold max-w-xs  text-shadow-lg [text-wrap:balance] font-sans mt-2"
           >
             {card.title}
           </motion.p>

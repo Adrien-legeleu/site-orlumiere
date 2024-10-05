@@ -56,38 +56,40 @@ const SkeletonFour = () => {
     >
       <motion.div
         variants={first}
-        className=" w-1/3 rounded-2xl bg-white  h-auto p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-start"
+        className=" w-1/3 rounded-2xl bg-white h-auto p-4 dark:bg-black dark:border-white/[0.18] border border-neutral-200 flex flex-col items-center justify-start"
       >
         <h3>Notre mission</h3>
-        <p className=" text-center leading-8 font-semibold text-neutral-500 mt-4">
+        <p className="text-center leading-8 font-semibold text-neutral-500 mt-4">
           Créer des bijoux intemporels qui célèbrent la beauté et
           l'individualité.
         </p>
-        <p className="border absolute bottom-4 border-red-500 bg-red-100 dark:bg-red-900/20 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Delusional
+        <p className="border absolute bottom-4 border-indigo-500 bg-indigo-100 dark:bg-indigo-900/20 text-indigo-600 text-xs rounded-full px-2 py-0.5 mt-4">
+          Inspirant
         </p>
       </motion.div>
-      <motion.div className="h-auto relative z-20 w-1/3   rounded-2xl bg-white p-4 pb-16 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-start">
+
+      <motion.div className="h-auto relative z-20 w-1/3 rounded-2xl bg-white p-4 pb-16 dark:bg-black dark:border-white/[0.18] border border-neutral-200 flex flex-col items-center justify-start">
         <h3>Notre histoire</h3>
-        <p className=" text-center leading-8 font-semibold text-neutral-500 mt-4">
+        <p className="text-center leading-8 font-semibold text-neutral-500 mt-4">
           Fondée en 2000, notre bijouterie est née d'une passion pour
           l'artisanat et la création de pièces uniques.
         </p>
-        <p className="border absolute bottom-4 border-green-500 bg-green-100 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Sensible
+        <p className="border absolute bottom-4 border-blue-500 bg-blue-100 dark:bg-blue-900/20 text-blue-600 text-xs rounded-full px-2 py-0.5 mt-4">
+          Authentique
         </p>
       </motion.div>
+
       <motion.div
         variants={second}
-        className="h-auto w-1/3 rounded-2xl bg-white p-4  dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-start"
+        className="h-auto w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.18] border border-neutral-200 flex flex-col items-center justify-start"
       >
         <h3>Nos engagements</h3>
-        <p className=" text-center leading-8 font-semibold text-neutral-500 mt-4">
+        <p className="text-center leading-8 font-semibold text-neutral-500 mt-4">
           Nous nous engageons à utiliser des matériaux de haute qualité et à
           pratiquer une fabrication éthique.
         </p>
-        <p className="border absolute bottom-4 border-orange-500 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Helpless
+        <p className="border absolute bottom-4 border-green-500 bg-green-100 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
+          Responsable
         </p>
       </motion.div>
     </motion.div>

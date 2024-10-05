@@ -11,9 +11,9 @@ import {
 
 const content = [
   {
-    title: "Nos porduits phares",
+    title: "Nos produits phares",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa voluptatem beatae laborum molestiae, dolor sequi, autem tenetur   exercitationem nisi quos voluptatum voluptas mollitia distinctio  quisquam dolorum rem aut ratione. Aspernatur, aliquam perferendis?",
+      "Découvrez notre sélection de bijoux incontournables, conçus pour allier élégance et raffinement, afin de sublimer chaque moment spécial.",
     content: (
       <div>
         <AppleCardsCarouselDemo />
@@ -21,9 +21,9 @@ const content = [
     ),
   },
   {
-    title: "Pourquoi-nous ?",
+    title: "Pourquoi nous ?",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa voluptatem beatae laborum molestiae, dolor sequi, autem tenetur   exercitationem nisi quos voluptatum voluptas mollitia distinctio  quisquam dolorum rem aut ratione. Aspernatur, aliquam perferendis?",
+      "Nous mettons un point d'honneur à offrir des bijoux de qualité, fabriqués avec passion et souci du détail, garantissant la satisfaction de chaque client.",
     content: (
       <div>
         <WhyUs />
@@ -33,7 +33,7 @@ const content = [
   {
     title: "Notre Collection",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa voluptatem beatae laborum molestiae, dolor sequi, autem tenetur   exercitationem nisi quos voluptatum voluptas mollitia distinctio  quisquam dolorum rem aut ratione. Aspernatur, aliquam perferendis?",
+      "Parcourez notre collection unique de bijoux, créée pour refléter l'individualité de chaque personne, avec des designs intemporels et modernes.",
     content: (
       <div>
         <Collection />
@@ -41,6 +41,7 @@ const content = [
     ),
   },
 ];
+
 export function MainProducts() {
   return (
     <div className="">
@@ -66,34 +67,33 @@ export function AppleCardsCarouselDemo() {
 
 const data = [
   {
-    category: "perle rare",
-    title: "Bijoux en or et sublime",
-    src: "/images/WhiteBg.jpg",
+    category: "Montre élégante",
+    title: "Montre au design moderne et raffiné",
+    src: "/images/montre (1).jpg",
   },
   {
-    category: "anneau",
-    title: "Bijoux en or et sublime",
-    src: "/images/BlackBg.jpg",
+    category: "Bague minimaliste",
+    title: "Bague fine avec un style contemporain",
+    src: "/images/bague (6).jpg",
   },
   {
-    category: "pendentif",
-    title: "Bijoux en or et sublime",
-    src: "/images/WhiteBg.jpg",
-  },
-
-  {
-    category: "bague en or",
-    title: "Bijoux en or et sublime",
-    src: "/images/BlackBg.jpg",
+    category: "Bracelet avec pendentif",
+    title: "Bracelet orné d'un pendentif subtil",
+    src: "/images/bracelets (2).jpg",
   },
   {
-    category: "collier de diament",
-    title: "Bijoux en or et sublime",
-    src: "/images/WhiteBg.jpg",
+    category: "Montre classique",
+    title: "Montre intemporelle au style épuré",
+    src: "/images/montre (4).jpg",
   },
   {
-    category: "Bague 400",
-    title: "Bijoux en or et sublime",
-    src: "/images/BlackBg.jpg",
+    category: "Collier élégant",
+    title: "Collier délicat au design raffiné",
+    src: "/images/collier (5).jpg",
+  },
+  {
+    category: "Bague sophistiquée",
+    title: "Bague avec un design élégant et travaillé",
+    src: "/images/collier (2).jpg",
   },
 ];

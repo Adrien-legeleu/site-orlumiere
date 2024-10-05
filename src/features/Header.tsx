@@ -40,38 +40,40 @@ function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/#notice">Ce qu'ils disent sur nous</HoveredLink>
           </div>
         </MenuItem>
+
         <MenuItem setActive={setActive} active={active} item="Collections">
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+          <div className="text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
               title="Collier"
               href="/collections"
-              src="/images/WhiteBg.jpg"
-              description="Prepare for tech interviews like never before."
+              src="/images/collier (1).jpg"
+              description="Explorez notre gamme de colliers raffinés, parfaits pour toutes les occasions."
             />
             <ProductItem
               title="Bagues"
               href="/collections"
-              src="/images/WhiteBg.jpg"
-              description="Production ready Tailwind css components for your next project"
+              src="/images/bague-8.jpg"
+              description="Découvrez nos bagues élégantes, conçues pour sublimer votre style."
             />
             <ProductItem
               title="Bracelets"
               href="/collections"
-              src="/images/WhiteBg.jpg"
-              description="Never write from scratch again. Go from idea to blog in minutes."
+              src="/images/bracelets (3).jpg"
+              description="Parcourez notre sélection de bracelets, alliant finesse et modernité."
             />
             <ProductItem
-              title="Rogue"
+              title="Montres"
               href="/collections"
-              src="/images/WhiteBg.jpg"
-              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+              src="/images/montre (4).jpg"
+              description="Trouvez la montre idéale pour ajouter une touche d'élégance à votre tenue."
             />
           </div>
         </MenuItem>
+
         <MenuItem setActive={setActive} active={active} item="A propos de nous">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/history">histoire</HoveredLink>
-            <HoveredLink href="/commitments">Engagements</HoveredLink>
+            <HoveredLink href="/about/#history">Histoire</HoveredLink>
+            <HoveredLink href="/about/#commitments">Engagements</HoveredLink>
           </div>
         </MenuItem>
       </Menu>

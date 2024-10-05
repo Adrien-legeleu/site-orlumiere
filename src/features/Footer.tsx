@@ -16,20 +16,20 @@ export const Footer = () => {
         </h2>
         <div className="flex gap-20">
           <ul>
-            <li className="text-left text-lg">Home</li>
+            <li className="text-left text-lg mb-2">Home</li>
             <li>Présentations</li>
             <li>Produits phares</li>
             <li>Ce qu'ils disent sur nous</li>
           </ul>
           <ul>
-            <li className="text-left text-lg">Collections</li>
+            <li className="text-left text-lg  mb-2">Collections</li>
             <li>Collier</li>
             <li>Bague</li>
             <li>Bracelets</li>
             <li>Montre</li>
           </ul>
           <ul>
-            <li className="text-left text-lg">A propos de nous</li>
+            <li className="text-left text-lg mb-2d">A propos de nous</li>
             <li>Histoire</li>
             <li>Engagements</li>
           </ul>
