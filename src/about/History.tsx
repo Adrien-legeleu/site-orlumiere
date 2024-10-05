@@ -457,12 +457,12 @@ export function History() {
       title: "2010 - Expansion à l'International",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-lg tracking-wider leading-10 font-normal mb-8">
+          <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-lg tracking-wider leading-10 font-normal ">
             Dix ans après notre lancement, nous avons élargi notre portée à
             l'international, avec des ventes en ligne et des collaborations avec
             des boutiques à l'étranger.
           </p>
-          <div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
+          <div className="min-w-96 w-96 relative -top-10 min-h-96 mx-auto z-10">
             <World data={sampleArcs} globeConfig={globeConfig} />
           </div>
         </div>

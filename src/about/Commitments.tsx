@@ -9,48 +9,56 @@ export function Commitments() {
   const features = [
     {
       title: "Qualité Supérieure",
+      color: "green-500",
       description:
         "Nous utilisons uniquement des matériaux de première qualité pour garantir la durabilité de chaque bijou.",
       icon: <IoDiamondOutline />,
     },
     {
       title: "Artisanat Exceptionnel",
+      color: "blue-500",
       description:
         "Nos bijoux sont minutieusement fabriqués à la main par des artisans expérimentés.",
       icon: <FaHandshake />,
     },
     {
       title: "Satisfaction Client",
+      color: "red-500",
       description:
         "Nous nous engageons à offrir une expérience client irréprochable à chaque étape.",
       icon: <FaRegThumbsUp />,
     },
     {
       title: "Service 24/7",
+      color: "green-500",
       description:
         "Notre service client est disponible 24 heures sur 24, 7 jours sur 7, pour répondre à vos besoins.",
       icon: <TbHours24 />,
     },
     {
       title: "Éco-responsabilité",
+      color: "green-500",
       description:
         "Nous mettons un point d’honneur à respecter l'environnement avec des matériaux recyclés.",
       icon: <FaRecycle />,
     },
     {
       title: "Garantie à Vie",
+      color: "red-500",
       description:
         "Tous nos bijoux sont garantis à vie pour vous assurer une totale tranquillité d’esprit.",
       icon: <FaMedal />,
     },
     {
       title: "Prix Compétitifs",
+      color: "blue-500",
       description:
         "Nous vous offrons le meilleur rapport qualité/prix du marché, sans compromis.",
       icon: <SiLeaderprice />,
     },
     {
       title: "Assistance Dédiée",
+      color: "green-500",
       description:
         "Un service dédié pour vous aider à chaque étape de votre expérience avec nous.",
       icon: <MdAssistant />,
@@ -76,11 +84,13 @@ const Feature = ({
   description,
   icon,
   index,
+  color,
 }: {
   title: string;
   description: string;
   icon: React.ReactNode;
   index: number;
+  color: string;
 }) => {
   return (
     <div
@@ -100,7 +110,9 @@ const Feature = ({
         {icon}
       </div>
       <div className="text-lg font-bold mb-2 relative z-10 px-10">
-        <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
+        <div
+          className={`absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-${color} transition-all duration-200 origin-center`}
+        />
         <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 dark:text-neutral-100">
           {title}
         </span>
