@@ -57,7 +57,7 @@ export function AppleCardsCarouselDemo() {
 
   return (
     <div className="w-full h-full p-5">
-      <h2 className="max-w-4xl pl-4 mx-auto text-center md:text-3xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+      <h2 className="max-w-4xl pl-4 mx-auto text-center md:text-3xl font-normal tracking-wider text-neutral-800 dark:text-neutral-200  font-orbitron">
         Nos produits tendances
       </h2>
       <Carousel items={cards} />

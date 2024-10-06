@@ -8,9 +8,9 @@ import {
 
 export const Footer = () => {
   return (
-    <div className="pt-28 pb-5 px-32 w-full space-y-8">
+    <div className="pt-28 pb-5 px-32 w-full space-y-8 font-montserrat">
       <div className="flex items-center justify-between">
-        <h2 className="text-center text-4xl font-semibold">
+        <h2 className="text-center text-black/70 dark:text-white/70 text-4xl font-semibold font-orbitron">
           Or <br />&<br />
           Lumière
         </h2>

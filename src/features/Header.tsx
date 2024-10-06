@@ -14,12 +14,12 @@ import { cn } from "lib/utils";
 
 export const Header = () => {
   return (
-    <div className="w-full z-50 absolute top-0 left-0 py-4 px-8 flex items-center justify-between">
-      <h1>Or&Lumière</h1>
+    <div className="w-full z-50 absolute top-0 left-0 py-4 px-8 flex items-center justify-between font-montserrat">
+      <h1 className="text-3xl tracking-wide pt-1 font-orbitron">Or&Lumière</h1>
       <div>
         <Navbar className="top-2" />
       </div>
-      <div>
+      <div className="pt-1">
         <ModeToggle />
       </div>
     </div>

@@ -7,12 +7,12 @@ export const Landing = () => {
         className="-top-40 left-0 md:left-60 md:-top-20 dark:flex hidden"
         fill="white"
       />
-      <h1 className="text-center tracking-widest text-6xl">
+      <h1 className="text-center tracking-widest text-6xl font-orbitron font-medium">
         <span>Or </span>
         <br />& <br />
         <span>Lumière</span>
       </h1>
-      <p className="text-3xl tracking-widest leading-relaxed  text-center">
+      <p className="text-3xl tracking-widest leading-relaxed  text-center font-handlee">
         <span>Faites vous plisir,</span>
         <br />
         <span>Choisissez un vrai bijoux</span>

@@ -15,10 +15,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        montserrat: ["Montserrat"],
+        handlee: ["Handlee"],
+        orbitron: ["Orbitron"],
+      },
       textShadow: {
         sm: "0 1px 2px black",
         DEFAULT: "0 2px 4px black",
-        lg: "0 8px 17px black",
+        lg: "0 8px 28px black",
       },
       colors: {
         background: "hsl(var(--background))",
@@ -68,6 +73,15 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        aurora: {
+          from: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
+          to: {
+            backgroundPosition: "350% 50%, 350% 50%",
+          },
+        },
+
         marquee: {
           from: {
             transform: "translateX(0)",
@@ -84,29 +98,23 @@ const config: Config = {
             transform: "translateY(calc(-100% - var(--gap)))",
           },
         },
-        "marquee-vertical": {
-          from: {
-            transform: "translateY(0)",
-          },
-          to: {
-            transform: "translateY(calc(-100% - var(--gap)))",
-          },
-        },
+
         spotlight: {
           "0%": {
-            opacity: 0,
+            opacity: "0",
             transform: "translate(-72%, -62%) scale(0.5)",
           },
           "100%": {
-            opacity: 1,
+            opacity: "1",
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
       },
       animation: {
         marquee: "marquee var(--duration) infinite linear",
+        aurora: "aurora 60s linear infinite",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
-        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+
         spotlight: "spotlight 2s ease .75s 1 forwards",
       },
     },

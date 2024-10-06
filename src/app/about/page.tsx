@@ -1,11 +1,13 @@
+"use client";
 import { Commitments } from "@src/about/Commitments";
 import { History } from "@src/about/History";
+import { AuroraBackground } from "@src/components/acerternity/aurora-background";
 import { Footer } from "@src/features/Footer";
 import { Header } from "@src/features/Header";
 
 export default function Collection() {
   return (
-    <div className="h-full">
+    <AuroraBackground className="h-full">
       <Header />
       <section id="history">
         <History />
@@ -14,6 +16,6 @@ export default function Collection() {
         <Commitments />
       </section>
       <Footer />
-    </div>
+    </AuroraBackground>
   );
 }

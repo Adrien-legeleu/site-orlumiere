@@ -201,13 +201,13 @@ export const Card = ({
         <div className="relative z-40 p-8 flex items-center h-full justify-between flex-col">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
-            className="text-white text-sm md:text-base text-center text-shadow-lg font-medium font-sans"
+            className="text-white text-sm md:text-base font-montserrat text-center text-shadow-lg font-medium "
           >
             {card.category}
           </motion.p>
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
-            className="text-white text-base md:text-lg text-left font-semibold max-w-xs  text-shadow-lg [text-wrap:balance] font-sans mt-2"
+            className="text-white text-base md:text-lg text-left font-semibold max-w-xs  text-shadow-lg [text-wrap:balance]  font-montserrat mt-2"
           >
             {card.title}
           </motion.p>
