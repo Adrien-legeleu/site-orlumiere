@@ -12,6 +12,7 @@ import {
 const content = [
   {
     title: "Nos produits phares",
+    button: "voir nos tendances",
     description:
       "Découvrez notre sélection de bijoux incontournables, conçus pour allier élégance et raffinement, afin de sublimer chaque moment spécial.",
     content: (
@@ -22,6 +23,7 @@ const content = [
   },
   {
     title: "Pourquoi nous ?",
+    button: "nos engagements",
     description:
       "Nous mettons un point d'honneur à offrir des bijoux de qualité, fabriqués avec passion et souci du détail, garantissant la satisfaction de chaque client.",
     content: (
@@ -32,6 +34,7 @@ const content = [
   },
   {
     title: "Notre Collection",
+    button: "notre collection",
     description:
       "Parcourez notre collection unique de bijoux, créée pour refléter l'individualité de chaque personne, avec des designs intemporels et modernes.",
     content: (

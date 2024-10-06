@@ -11,16 +11,18 @@ import Link from "next/link";
 
 import { ModeToggle } from "@src/components/ModeToggle";
 import { cn } from "lib/utils";
+import { MenuBurger } from "./MenuBurger";
 
 export const Header = () => {
   return (
     <div className="w-full z-50 absolute top-0 left-0 py-4 px-8 flex items-center justify-between font-montserrat">
       <h1 className="text-3xl tracking-wide pt-1 font-orbitron">Or&Lumière</h1>
-      <div>
+      <div className="hidden md:flex">
         <Navbar className="top-2" />
       </div>
-      <div className="pt-1">
+      <div className="pt-1 flex flex-row items-center justify-center gap-5">
         <ModeToggle />
+        <MenuBurger />
       </div>
     </div>
   );

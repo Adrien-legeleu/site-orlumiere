@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "lib/utils";
+import { Button } from "../ui/button";
 
 export const StickyScroll = ({
   content,
@@ -11,6 +12,7 @@ export const StickyScroll = ({
   content: {
     title: string;
     description: string;
+    button: string;
     content?: React.ReactNode | any;
   }[];
   contentClassName?: string;
@@ -90,10 +92,22 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-lg font-montserrat dark:text-gray-500 leading-8 tracking-wider text-gray-300 max-w-sm mt-10"
+                className="text-lg font-montserrat dark:text-gray-500 leading-8 tracking-wider text-gray-300 max-w-sm my-10"
               >
                 {item.description}
               </motion.p>
+              <motion.a
+                href={`${index != 1 ? "collections" : "/about"}`}
+                initial={{
+                  opacity: 0,
+                }}
+                animate={{
+                  opacity: activeCard === index ? 1 : 0.3,
+                }}
+                className=" font-montserrat  tracking-wider  max-w-sm "
+              >
+                <Button>{item.button}</Button>
+              </motion.a>
             </div>
           ))}
           <div className="h-40" />

@@ -28,6 +28,8 @@ export function History() {
     arcTime: 1000,
     arcLength: 0.9,
     rings: 1,
+    with: "400px",
+    height: "400px",
     maxRings: 3,
     initialPosition: { lat: 22.3193, lng: 114.1694 },
     autoRotate: true,
@@ -461,7 +463,7 @@ export function History() {
             ventes en ligne et collaborant avec des boutiques à l'étranger.
             L'aventure internationale commence !
           </p>
-          <div className="min-w-[400px]  relative -top-10 min-h-96 mx-auto z-10">
+          <div className="min-w-64 min-h-64 relative   mx-auto z-10">
             <World data={sampleArcs} globeConfig={globeConfig} />
           </div>
         </div>

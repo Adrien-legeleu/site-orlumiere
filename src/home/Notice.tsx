@@ -39,21 +39,34 @@ const ReviewCard = ({
 export function Notice() {
   return (
     <div className="relative flex h-screen mt-32 w-full flex-col  rounded-lg bg-background px-4">
-      <h2 className="text-center font-medium tracking-wider text-4xl mb-16 font-orbitron">
+      <h2 className="text-center font-medium tracking-wider text-2xl sm:text-4xl mb-16 font-orbitron">
         Ce qu'ils disent sur nous
       </h2>
       <div className="flex flex-row items-center justify-center overflow-hidden font-montserrat">
-        <Marquee pauseOnHover vertical className="[--duration:50s]">
+        <Marquee
+          pauseOnHover
+          vertical
+          className="[--duration:15s] sm:[--duration:30s] lg:[--duration:50s]"
+        >
           {secondRow.map((review) => (
             <ReviewCard key={review.username} {...review} />
           ))}
         </Marquee>
-        <Marquee reverse pauseOnHover vertical className="[--duration:40s]">
+        <Marquee
+          reverse
+          pauseOnHover
+          vertical
+          className="[--duration:40s] hidden lg:flex"
+        >
           {firstRow.map((review) => (
             <ReviewCard key={review.username} {...review} />
           ))}
         </Marquee>
-        <Marquee pauseOnHover vertical className="[--duration:50s]">
+        <Marquee
+          pauseOnHover
+          vertical
+          className="[--duration:50s] sm:flex hidden"
+        >
           {thirdRow.map((review) => (
             <ReviewCard key={review.username} {...review} />
           ))}
