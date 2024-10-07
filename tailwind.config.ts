@@ -16,7 +16,7 @@ const config: Config = {
   theme: {
     extend: {
       boxShadow: {
-        menuBurger: "0 0 60px 0 #FFFFFF55",
+        menuBurger: "0 0 60px 0 #FFFFFF35",
       },
       screens: {
         "450px": "450px",

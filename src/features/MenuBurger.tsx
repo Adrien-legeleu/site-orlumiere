@@ -2,6 +2,16 @@ import { Button } from "@src/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+const transition = {
+  type: "spring",
+  mass: 0.5,
+  damping: 11.5,
+  stiffness: 100,
+  restDelta: 0.001,
+  restSpeed: 0.001,
+};
 
 interface IMenuBurgerProps {
   isActive: boolean;
@@ -12,7 +22,7 @@ export const MenuBurger = ({ isActive, toggleActive }: IMenuBurgerProps) => {
   return (
     <div className="md:hidden">
       <div className="z-[100] cursor-pointer" onClick={toggleActive}>
-        {isActive ? <X /> : <Menu />}
+        {isActive ? <X className="h-8 w-8" /> : <Menu className="w-8 h-8" />}
       </div>
     </div>
   );
@@ -22,7 +32,11 @@ export const MenuInterface = ({ isActive, toggleActive }: IMenuBurgerProps) => {
   return (
     <div className={`md:hidden ${isActive ? "flex" : "hidden"}`}>
       <div
-        className={`fixed flex-col space-y-14 bottom-0 left-1/2 overflow-y-scroll -translate-x-1/2 bg-white dark:bg-gray-950 dark:shadow-menuBurger rounded-t-[2rem] w-screen max-w-2xl h-2/3 py-8 px-8 550px:px-16`}
+        className={`fixed flex-col space-y-14 bottom-0 left-1/2 overflow-y-scroll bg-white dark:bg-gray-950 dark:shadow-menuBurger rounded-t-[2rem] w-screen max-w-2xl h-2/3 py-8 px-8 550px:px-16 transform transition-transform duration-500 ease-in-out ${
+          isActive
+            ? "translate-y-0 -translate-x-1/2"
+            : "translate-y-full -translate-x-1/2"
+        }`}
         style={{ scrollbarWidth: "none" }}
       >
         <div className="absolute top-6 left-0 w-full h-2 flex ">
