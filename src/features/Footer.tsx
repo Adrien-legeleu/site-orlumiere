@@ -51,7 +51,7 @@ export const Footer = () => {
                 <a href="">Produits phares</a>
               </AccordionContent>
               <AccordionContent>
-                <a href="">A propos</a>
+                <a href="">Leurs avis</a>
               </AccordionContent>
             </AccordionItem>
 
