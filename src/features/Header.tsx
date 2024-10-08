@@ -21,10 +21,10 @@ export const Header = () => {
 
   return (
     <div className="w-full z-[100] absolute top-0 left-0 py-4 px-8 flex items-center justify-between font-montserrat">
-      <h1 className=" z-50 text-3xl tracking-wide pt-1 font-orbitron">
+      <h1 className=" z-50 text-2xl 450px:text-3xl tracking-wide pt-1 font-orbitron">
         Or&Lumière
       </h1>
-      <div className="hidden md:flex">
+      <div className="hidden lg:flex">
         <Navbar className="top-2" />
       </div>
       <div className="pt-1 flex flex-row items-center justify-end w-full gap-5 ">
@@ -44,7 +44,10 @@ function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
-      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
+      className={cn(
+        "fixed top-10 inset-x-0 w-1/2 max-w-2xl mx-auto z-50",
+        className
+      )}
     >
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Home">

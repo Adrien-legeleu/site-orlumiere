@@ -37,10 +37,10 @@ export const Tabs = ({
   const [hovering, setHovering] = useState(false);
 
   return (
-    <div className="space-y-16 mx-auto">
+    <div className="space-y-16 450px:mx-auto  ">
       <div
         className={cn(
-          "flex flex-row  justify-center items-center gap-5 [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          "450px:flex 450px:flex-row grid grid-cols-3 max-450px:ml-4  justify-center items-center gap-0 xl:gap-5 [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
           containerClassName
         )}
       >
@@ -52,7 +52,10 @@ export const Tabs = ({
             }}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
-            className={cn("relative px-4 pt-2 rounded-full", tabClassName)}
+            className={cn(
+              "relative px-2 lg:px-4 pt-2 rounded-full",
+              tabClassName
+            )}
             style={{
               transformStyle: "preserve-3d",
             }}
@@ -74,7 +77,10 @@ export const Tabs = ({
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn("h-auto", contentClassName)}
+        className={cn(
+          "h-auto max-450px:w-screen max-450px:px-4",
+          contentClassName
+        )}
       />
     </div>
   );

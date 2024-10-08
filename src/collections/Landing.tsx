@@ -10,7 +10,7 @@ export function Landing() {
   const tabs = [
     {
       title: (
-        <div className="bg-[url('/images/collier%20(1).jpg')] flex items-center justify-center py-16 px-24 rounded-3xl bg-cover bg-center hover:animate-bounce shadow-2xl dark:shadow-white/20"></div>
+        <div className="bg-[url('/images/collier%20(1).jpg')] flex items-center justify-center px-9 py-6  sm:py-8 sm:px-12 md:py-10 md:px-16 lg:py-12 lg:px-20 xl:py-16 xl:px-24 rounded-lg sm:rounded-xl lg:rounded-2xl xl:rounded-3xl bg-cover bg-center hover:animate-bounce shadow-2xl dark:shadow-white/20"></div>
       ),
       value: "necklace",
       content: (
@@ -25,7 +25,7 @@ export function Landing() {
     },
     {
       title: (
-        <div className="bg-[url(/images/bague-8.jpg)] flex items-center justify-center py-16 px-24 rounded-3xl bg-cover bg-center hover:animate-bounce shadow-2xl dark:shadow-white/20"></div>
+        <div className="bg-[url(/images/bague-8.jpg)] flex items-center justify-center  px-9 py-6  sm:py-8 sm:px-12 md:py-10 md:px-16 lg:py-12 lg:px-20 xl:py-16 xl:px-24 rounded-lg sm:rounded-xl lg:rounded-2xl xl:rounded-3xl  bg-cover bg-center hover:animate-bounce shadow-2xl dark:shadow-white/20"></div>
       ),
       value: "ring",
       content: (
@@ -39,7 +39,7 @@ export function Landing() {
     },
     {
       title: (
-        <div className="bg-[url('/images/bracelets%20(3).jpg')] flex items-center justify-center py-16 px-24 rounded-3xl bg-cover bg-center hover:animate-bounce shadow-2xl dark:shadow-white/20"></div>
+        <div className="bg-[url('/images/bracelets%20(3).jpg')] flex items-center justify-center  px-9 py-6  sm:py-8 sm:px-12 md:py-10 md:px-16 lg:py-12 lg:px-20 xl:py-16 xl:px-24 rounded-lg sm:rounded-xl lg:rounded-2xl xl:rounded-3xl  bg-cover bg-center hover:animate-bounce shadow-2xl dark:shadow-white/20"></div>
       ),
       value: "playground",
       content: (
@@ -53,7 +53,7 @@ export function Landing() {
     },
     {
       title: (
-        <div className="bg-[url('/images/montre%20(4).jpg')] flex items-center justify-center py-16 px-24 rounded-3xl bg-cover bg-center  hover:animate-bounce shadow-2xl dark:shadow-white/20"></div>
+        <div className="bg-[url('/images/montre%20(4).jpg')] flex items-center justify-center  px-9 py-6  sm:py-8 sm:px-12 md:py-10 md:px-16 lg:py-12 lg:px-20 xl:py-16 xl:px-24 rounded-lg sm:rounded-xl lg:rounded-2xl xl:rounded-3xl  bg-cover bg-center  hover:animate-bounce shadow-2xl dark:shadow-white/20"></div>
       ),
       value: "content",
       content: (
@@ -67,7 +67,7 @@ export function Landing() {
     },
     {
       title: (
-        <div className="bg-[url(/images/Tendance.png)] flex items-center justify-center py-16 px-24 rounded-3xl bg-cover bg-center hover:animate-bounce shadow-2xl dark:shadow-white/20"></div>
+        <div className="bg-[url(/images/Tendance.png)] flex items-center justify-center  px-9 py-6  sm:py-8 sm:px-12 md:py-10 md:px-16 lg:py-12 lg:px-20 xl:py-16 xl:px-24 rounded-lg sm:rounded-xl lg:rounded-2xl xl:rounded-3xl  bg-cover bg-center hover:animate-bounce shadow-2xl dark:shadow-white/20"></div>
       ),
       value: "random",
       content: (
