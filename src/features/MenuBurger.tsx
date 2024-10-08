@@ -24,10 +24,10 @@ export const MenuBurger = ({ isActive, toggleActive }: IMenuBurgerProps) => {
       <div>
         <button
           onClick={toggleActive} // Ajout de l'événement onClick pour toggleActive
-          className="relative group"
+          className="relative group flex items-center justify-center"
         >
-          <div className="relative flex items-center justify-center w-[50px] h-[50px]">
-            <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
+          <div className="relative flex items-center justify-center w-[20px] h-[20px]">
+            <div className="flex flex-col justify-between w-full h-full transform transition-all duration-300 origin-center overflow-hidden">
               <div
                 className={`bg-black dark:bg-white h-[2px] w-7 transform transition-all duration-300 origin-left ${
                   isActive ? "translate-x-10" : ""
