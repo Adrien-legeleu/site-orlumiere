@@ -21,15 +21,19 @@ export const Header = () => {
 
   return (
     <div className="w-full z-[100] absolute top-0 left-0 py-4 px-8 flex items-center justify-between font-montserrat">
-      <h1 className="text-3xl z-50 tracking-wide pt-1 font-orbitron">
+      <h1 className=" z-50 text-3xl tracking-wide pt-1 font-orbitron">
         Or&Lumière
       </h1>
       <div className="hidden md:flex">
         <Navbar className="top-2" />
       </div>
       <div className="pt-1 flex flex-row items-center justify-end w-full gap-5 ">
-        <ModeToggle />
-        <MenuBurger isActive={isActive} toggleActive={toggleActive} />
+        <div>
+          <ModeToggle />
+        </div>
+        <div className="z-50">
+          <MenuBurger isActive={isActive} toggleActive={toggleActive} />
+        </div>
       </div>
       <MenuInterface isActive={isActive} toggleActive={toggleActive} />
     </div>
