@@ -1,5 +1,5 @@
 import { Button } from "@src/components/ui/button";
-import { Menu, X } from "lucide-react";
+
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";

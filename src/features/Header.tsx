@@ -7,7 +7,6 @@ import {
   MenuItem,
   ProductItem,
 } from "../components/acerternity/navbar-menu";
-import Link from "next/link";
 
 import { ModeToggle } from "@src/components/ModeToggle";
 import { cn } from "lib/utils";
@@ -54,7 +53,9 @@ function Navbar({ className }: { className?: string }) {
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/#presentation">Présentation</HoveredLink>
             <HoveredLink href="/#main-products">Produits phares</HoveredLink>
-            <HoveredLink href="/#notice">Ce qu'ils disent sur nous</HoveredLink>
+            <HoveredLink href="/#notice">
+              Ce qu&#39;ils disent sur nous
+            </HoveredLink>
           </div>
         </MenuItem>
 

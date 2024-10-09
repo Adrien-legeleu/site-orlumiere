@@ -19,7 +19,6 @@ export function WhyUs() {
           description={item.description}
           header={item.header}
           className={cn("[&>p:text-lg]", item.className)}
-          icon={item.icon}
         />
       ))}
     </BentoGrid>
@@ -61,7 +60,7 @@ const SkeletonFour = () => {
         <h3>Notre mission</h3>
         <p className="text-center leading-8 font-semibold text-neutral-500 mt-4">
           Créer des bijoux intemporels qui célèbrent la beauté et
-          l'individualité.
+          l&#39;individualité.
         </p>
         <p className="border absolute bottom-4 border-indigo-500 bg-indigo-100 dark:bg-indigo-900/20 text-indigo-600 text-xs rounded-full px-2 py-0.5 mt-4">
           Inspirant
@@ -71,8 +70,8 @@ const SkeletonFour = () => {
       <motion.div className="h-auto relative z-20 w-1/3 rounded-2xl bg-white p-4 pb-16 dark:bg-black dark:border-white/[0.18] border border-neutral-200 flex flex-col items-center justify-start">
         <h3>Notre histoire</h3>
         <p className="text-center leading-8 font-semibold text-neutral-500 mt-4">
-          Fondée en 2000, notre bijouterie est née d'une passion pour
-          l'artisanat et la création de pièces uniques.
+          Fondée en 2000, notre bijouterie est née d&#39;une passion pour
+          l&#39;artisanat et la création de pièces uniques.
         </p>
         <p className="border absolute bottom-4 border-blue-500 bg-blue-100 dark:bg-blue-900/20 text-blue-600 text-xs rounded-full px-2 py-0.5 mt-4">
           Authentique
@@ -104,6 +103,5 @@ const items = [
     ),
     header: <SkeletonFour />,
     className: "md:col-span-2",
-    icon: "",
   },
 ];

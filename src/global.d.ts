@@ -1,4 +1,10 @@
 declare module "*.json" {
-  const value: any;
+  interface MyJsonData {
+    name: string;
+    age: number;
+    isActive: boolean;
+  }
+
+  const value: MyJsonData;
   export default value;
 }

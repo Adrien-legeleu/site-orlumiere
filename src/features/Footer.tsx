@@ -31,7 +31,7 @@ export const Footer = () => {
               <Link href="/#main-products">Produits phares</Link>
             </li>
             <li>
-              <Link href="/#notice">Ce qu'ils disent sur nous</Link>
+              <Link href="/#notice">Ce qu&#39;ils disent sur nous</Link>
             </li>
           </ul>
           <ul>
@@ -70,7 +70,7 @@ export const Footer = () => {
                 <Link href="/#main-products">Produits phares</Link>
               </AccordionContent>
               <AccordionContent>
-                <Link href="/#notice">Ce qu'ils disent sur nous</Link>
+                <Link href="/#notice">Ce qu&#39;ils disent sur nous</Link>
               </AccordionContent>
             </AccordionItem>
 

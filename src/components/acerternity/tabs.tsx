@@ -1,13 +1,11 @@
-"use client";
-
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "lib/utils";
 
 type Tab = {
-  title: string | React.ReactNode | any;
+  title: string | React.ReactNode;
   value: string;
-  content?: string | React.ReactNode | any;
+  content?: string | React.ReactNode;
 };
 
 export const Tabs = ({
@@ -40,13 +38,13 @@ export const Tabs = ({
     <div className="space-y-16 450px:mx-auto  ">
       <div
         className={cn(
-          "450px:flex 450px:flex-row grid grid-cols-3 max-450px:px-4 w-screen  justify-center items-center gap-0 xl:gap-5 [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full 450px:w-full",
+          "450px:flex 450px:flex-row grid grid-cols-3 max-450px:px-4 w-screen justify-center items-center gap-0 xl:gap-5 [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full 450px:w-full",
           containerClassName
         )}
       >
         {propTabs.map((tab, idx) => (
           <button
-            key={tab.title}
+            key={tab.title?.toString()} // use .toString() if ReactNode or string
             onClick={() => {
               moveSelectedTabToTop(idx);
             }}
@@ -89,6 +87,7 @@ export const Tabs = ({
 export const FadeInDiv = ({
   className,
   tabs,
+  active,
   hovering,
 }: {
   className?: string;
@@ -97,9 +96,8 @@ export const FadeInDiv = ({
   active: Tab;
   hovering?: boolean;
 }) => {
-  const isActive = (tab: Tab) => {
-    return tab.value === tabs[0].value;
-  };
+  const isActive = (tab: Tab) => tab.value === tabs[0].value;
+
   return (
     <div className="relative w-full h-[60vh] sm:h-screen">
       {tabs.map((tab, idx) => (

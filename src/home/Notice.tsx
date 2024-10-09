@@ -40,7 +40,7 @@ export function Notice() {
   return (
     <div className="relative flex h-screen mt-32 w-full flex-col  rounded-lg bg-background px-4">
       <h2 className="text-center font-medium tracking-wider text-2xl sm:text-4xl mb-16 font-orbitron">
-        Ce qu'ils disent sur nous
+        Ce qu&#39;ils disent sur nous
       </h2>
       <div className="flex flex-row items-center justify-center overflow-hidden font-montserrat">
         <Marquee

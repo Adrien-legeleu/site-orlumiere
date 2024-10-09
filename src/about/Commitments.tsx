@@ -104,17 +104,6 @@ const Feature = ({
     gray: "from-gray-400/15",
   };
 
-  const badgeColor: Record<string, string> = {
-    gold: "bg-yellow-400",
-    brown: "bg-amber-700",
-    lightblue: "bg-sky-300",
-    purple: "bg-purple-500",
-    lightgreen: "bg-green-300",
-    darkblue: "bg-blue-800",
-    orange: "bg-orange-500",
-    gray: "bg-gray-400",
-  };
-
   const textColor: Record<string, string> = {
     gold: "text-yellow-400",
     brown: "text-amber-700",
@@ -127,7 +116,7 @@ const Feature = ({
   };
 
   const gradient = gradientFromColor[color] || "from-gray-500/15";
-  const badge = badgeColor[color] || "bg-gray-500";
+
   const text = textColor[color] || "text-gray-500";
 
   return (

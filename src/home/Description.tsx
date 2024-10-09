@@ -6,7 +6,7 @@ export const Description = () => {
           Joaillerie Or&Lumière, Paris
         </h2>
         <p className="text-center text-lg sm:text-2xl text-gray-300 dark:text-gray-500 leading-loose font-montserrat">
-          À Or&Lumière, nous concevons des bijoux d'exception qui allient
+          À Or&Lumière, nous concevons des bijoux d&#39;exception qui allient
           artisanat et élégance. Chaque pièce est réalisée avec soin, utilisant
           des matériaux de qualité pour sublimer votre style et célébrer vos
           moments précieux.

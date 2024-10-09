@@ -1,5 +1,4 @@
 import { Timeline } from "@src/components/acerternity/timeline";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import React from "react";
 
@@ -11,8 +10,8 @@ export function History() {
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-lg tracking-widest  leading-10 font-medium mb-8">
             ✨ En 2000, tout a commencé ! Notre fondatrice, passionnée de bijoux
-            et d'artisanat, a ouvert sa première boutique à Paris 🏙️, offrant
-            des créations uniques et faites à la main 🖐️💍.
+            et d&#39;artisanat, a ouvert sa première boutique à Paris 🏙️,
+            offrant des créations uniques et faites à la main 🖐️💍.
           </p>
           <div className="md:grid flex md:grid-cols-2 gap-4">
             <Image
@@ -61,13 +60,13 @@ export function History() {
       ),
     },
     {
-      title: "2010 - Expansion à l'International",
+      title: "2010 - Expansion à l&#39;International",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-lg tracking-widest leading-10 font-medium">
             🌍 En 2010, nous avons franchi les frontières 🌐 en lançant nos
-            ventes en ligne et collaborant avec des boutiques à l'étranger.
-            L'aventure internationale commence !
+            ventes en ligne et collaborant avec des boutiques à l&#39;étranger.
+            L&#39;aventure internationale commence !
           </p>
           <div className="md:grid flex md:grid-cols-2 gap-4">
             <Image
@@ -122,7 +121,7 @@ export function History() {
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-lg tracking-widest leading-10 font-medium mb-8">
             🏆 En 2020, nous avons été honorés par plusieurs prix pour
-            l'innovation et le design 💡, marquant une étape importante dans
+            l&#39;innovation et le design 💡, marquant une étape importante dans
             notre parcours 🚀.
           </p>
           <div className="md:grid flex md:grid-cols-2 gap-4">
