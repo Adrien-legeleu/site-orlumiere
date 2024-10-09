@@ -93,8 +93,8 @@ export function History() {
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-lg tracking-widest leading-10 font-medium mb-8">
             🌱 En 2015, nous avons renforcé notre engagement en faveur de
-            l'éthique 💚, en privilégiant des matériaux durables et en soutenant
-            les artisans locaux 👩‍🎨👨‍🎨.
+            l&#39;éthique 💚, en privilégiant des matériaux durables et en
+            soutenant les artisans locaux 👩‍🎨👨‍🎨.
           </p>
           <div className="md:grid flex md:grid-cols-2 gap-4">
             <Image
@@ -148,9 +148,9 @@ export function History() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-lg tracking-widest leading-10 font-medium mb-8">
-            🔮 En 2023, notre vision se tourne vers l'avenir 🌟. Nous continuons
-            de créer avec passion tout en restant fidèles à notre mission de
-            qualité et d'authenticité 🖤.
+            🔮 En 2023, notre vision se tourne vers l&#39;avenir 🌟. Nous
+            continuons de créer avec passion tout en restant fidèles à notre
+            mission de qualité et d&#39;authenticité 🖤.
           </p>
           <div className="md:grid flex md:grid-cols-2 gap-4">
             <Image
