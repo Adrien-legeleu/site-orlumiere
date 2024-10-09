@@ -50,7 +50,7 @@ function Navbar({ className }: { className?: string }) {
       )}
     >
       <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="Home">
+        <MenuItem setActive={setActive} active={active} item="Home" href="/">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/#presentation">Présentation</HoveredLink>
             <HoveredLink href="/#main-products">Produits phares</HoveredLink>
@@ -58,7 +58,12 @@ function Navbar({ className }: { className?: string }) {
           </div>
         </MenuItem>
 
-        <MenuItem setActive={setActive} active={active} item="Collections">
+        <MenuItem
+          setActive={setActive}
+          active={active}
+          item="Collections"
+          href="collections"
+        >
           <div className="text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
               title="Collier"
@@ -87,7 +92,12 @@ function Navbar({ className }: { className?: string }) {
           </div>
         </MenuItem>
 
-        <MenuItem setActive={setActive} active={active} item="A propos de nous">
+        <MenuItem
+          setActive={setActive}
+          active={active}
+          item="A propos de nous"
+          href="about"
+        >
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/about/#history">Histoire</HoveredLink>
             <HoveredLink href="/about/#commitments">Engagements</HoveredLink>

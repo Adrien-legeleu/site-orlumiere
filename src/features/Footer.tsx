@@ -1,16 +1,17 @@
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@src/components/ui/accordion";
-import {
   SiFacebook,
   SiGithub,
   SiInstagram,
   SiPinterest,
   SiX,
 } from "react-icons/si";
+import Link from "next/link"; // Si tu utilises Next.js
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@src/components/ui/accordion";
 
 export const Footer = () => {
   return (
@@ -23,21 +24,39 @@ export const Footer = () => {
         <div className=" md:gap-20 gap-12 sm:flex hidden">
           <ul>
             <li className="text-left text-lg mb-2">Home</li>
-            <li>Présentations</li>
-            <li>Produits phares</li>
-            <li>A propos</li>
+            <li>
+              <Link href="/#presentation">Présentation</Link>
+            </li>
+            <li>
+              <Link href="/#main-products">Produits phares</Link>
+            </li>
+            <li>
+              <Link href="/#notice">Ce qu'ils disent sur nous</Link>
+            </li>
           </ul>
           <ul>
-            <li className="text-left text-lg  mb-2">Collections</li>
-            <li>Collier</li>
-            <li>Bague</li>
-            <li>Bracelets</li>
-            <li>Montre</li>
+            <li className="text-left text-lg mb-2">Collections</li>
+            <li>
+              <Link href="/collections">Collier</Link>
+            </li>
+            <li>
+              <Link href="/collections">Bague</Link>
+            </li>
+            <li>
+              <Link href="/collections">Bracelets</Link>
+            </li>
+            <li>
+              <Link href="/collections">Montre</Link>
+            </li>
           </ul>
           <ul>
-            <li className="text-left text-lg mb-2d">A propos de nous</li>
-            <li>Histoire</li>
-            <li>Engagements</li>
+            <li className="text-left text-lg mb-2">A propos de nous</li>
+            <li>
+              <Link href="/about/#history">Histoire</Link>
+            </li>
+            <li>
+              <Link href="/about/#commitments">Engagements</Link>
+            </li>
           </ul>
         </div>
         <div className="sm:hidden 450px:w-1/2 w-3/4 ">
@@ -45,39 +64,39 @@ export const Footer = () => {
             <AccordionItem value="item-1">
               <AccordionTrigger>Home</AccordionTrigger>
               <AccordionContent>
-                <a href="">Présentation</a>
+                <Link href="/#presentation">Présentation</Link>
               </AccordionContent>
               <AccordionContent>
-                <a href="">Produits phares</a>
+                <Link href="/#main-products">Produits phares</Link>
               </AccordionContent>
               <AccordionContent>
-                <a href="">Leurs avis</a>
+                <Link href="/#notice">Ce qu'ils disent sur nous</Link>
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2">
               <AccordionTrigger>Collections</AccordionTrigger>
               <AccordionContent>
-                <a href="">Collier</a>
+                <Link href="/collections">Collier</Link>
               </AccordionContent>
               <AccordionContent>
-                <a href="">Bague</a>
+                <Link href="/collections">Bague</Link>
               </AccordionContent>
               <AccordionContent>
-                <a href="">Bracelets</a>
+                <Link href="/collections">Bracelets</Link>
               </AccordionContent>
               <AccordionContent>
-                <a href="">Montre</a>
+                <Link href="/collections">Montre</Link>
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3">
               <AccordionTrigger>A propos de nous</AccordionTrigger>
               <AccordionContent>
-                <a href="">Histoire</a>
+                <Link href="/about/#history">Histoire</Link>
               </AccordionContent>
               <AccordionContent>
-                <a href="">Engagements</a>
+                <Link href="/about/#commitments">Engagements</Link>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
