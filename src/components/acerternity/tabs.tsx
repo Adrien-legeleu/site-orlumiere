@@ -40,7 +40,7 @@ export const Tabs = ({
     <div className="space-y-16 450px:mx-auto  ">
       <div
         className={cn(
-          "450px:flex 450px:flex-row grid grid-cols-3 max-450px:ml-4  justify-center items-center gap-0 xl:gap-5 [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          "450px:flex 450px:flex-row grid grid-cols-3 max-450px:px-4 w-screen  justify-center items-center gap-0 xl:gap-5 [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full 450px:w-full",
           containerClassName
         )}
       >
@@ -101,7 +101,7 @@ export const FadeInDiv = ({
     return tab.value === tabs[0].value;
   };
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-[60vh] sm:h-screen">
       {tabs.map((tab, idx) => (
         <motion.div
           key={tab.value}

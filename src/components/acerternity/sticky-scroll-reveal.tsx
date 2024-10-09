@@ -97,7 +97,7 @@ export const StickyScroll = ({
                 {item.description}
               </motion.p>
               <motion.a
-                href={`${index != 1 ? "collections" : "/about"}`}
+                href={`${index != 1 ? "/collections" : "/about"}`}
                 initial={{
                   opacity: 0,
                 }}

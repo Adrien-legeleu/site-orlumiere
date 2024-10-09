@@ -94,7 +94,7 @@ export const MenuInterface = ({ isActive, toggleActive }: IMenuBurgerProps) => {
               Home
             </h3>
           </Link>
-          <div className="flex flex-row gap-5 mt-5">
+          <div className="550xp:flex grid grid-cols-2 450px:w-2/3 380px:w-4/5 w-full 550px:flex-row 450px:gap-5 gap-4 mt-5">
             <Link href="/#presentation">
               <Button>Présentation</Button>
             </Link>

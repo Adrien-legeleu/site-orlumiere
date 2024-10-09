@@ -14,8 +14,8 @@ export function Landing() {
       ),
       value: "necklace",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-500 to-purple-500">
-          <h3 className="text-center text-4xl tracking-widest font-orbitron">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl  450px:p-10 px-4 py-8 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#DED5CE] to-[#cec4bd]">
+          <h3 className="text-center max-550px:pb-8 text-4xl tracking-widest font-orbitron">
             Nos Colliers
           </h3>
 
@@ -29,8 +29,8 @@ export function Landing() {
       ),
       value: "ring",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-500 to-purple-500">
-          <h3 className="text-center text-4xl tracking-widest font-orbitron">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl  450px:p-10 px-4 py-8 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#DED5CE] to-[#cec4bd]">
+          <h3 className="text-center max-550px:pb-8 text-4xl tracking-widest font-orbitron">
             Nos Bagues
           </h3>
           <AppleCardsCarouselDemoBagues />
@@ -43,8 +43,8 @@ export function Landing() {
       ),
       value: "playground",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-500 to-purple-500">
-          <h3 className="text-center text-4xl tracking-widest font-orbitron">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl  450px:p-10 px-4 py-8 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#DED5CE] to-[#cec4bd]">
+          <h3 className="text-center max-550px:pb-8 text-4xl tracking-widest font-orbitron">
             Nos blacelets
           </h3>
           <AppleCardsCarouselDemoBracelets />
@@ -57,8 +57,8 @@ export function Landing() {
       ),
       value: "content",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-500 to-purple-500">
-          <h3 className="text-center text-4xl tracking-widest font-orbitron">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl  450px:p-10 px-4 py-8 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#DED5CE] to-[#cec4bd]">
+          <h3 className="text-center max-550px:pb-8 text-4xl tracking-widest font-orbitron">
             Nos Montres
           </h3>
           <AppleCardsCarouselDemoMontres />
@@ -71,8 +71,8 @@ export function Landing() {
       ),
       value: "random",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-blue-500 to-purple-500">
-          <h3 className="text-center text-4xl tracking-widest font-orbitron">
+        <div className="w-full overflow-hidden relative h-full rounded-2xl 450px:p-10 px-4 py-8 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#DED5CE] to-[#cec4bd]">
+          <h3 className="text-center max-550px:pb-8 text-4xl tracking-widest font-orbitron">
             Tendances
           </h3>
           <AppleCardsCarouselDemoTendances />

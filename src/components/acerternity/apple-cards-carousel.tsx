@@ -121,7 +121,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                   },
                 }}
                 key={"card" + index}
-                className="last:pr-[5%] md:last:pr-[33%]  rounded-xl"
+                className="last:pr-[5%] md:last:pr-[33%]    rounded-xl"
               >
                 {item}
               </motion.div>
@@ -130,14 +130,14 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
         </div>
         <div className="flex justify-end gap-2 mr-10">
           <button
-            className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
+            className="relative z-40 h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center disabled:opacity-50"
             onClick={scrollLeft}
             disabled={!canScrollLeft}
           >
             <MoveLeft className="dark:text-black" />
           </button>
           <button
-            className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
+            className="relative z-40 h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center disabled:opacity-50"
             onClick={scrollRight}
             disabled={!canScrollRight}
           >
@@ -198,7 +198,7 @@ export const Card = ({
         className="rounded-xl bg-gray-100 dark:bg-neutral-900 h-64 w-56  cursor-default overflow-hidden flex flex-col items-start justify-start relative z-10"
       >
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
-        <div className="relative z-40 p-8 flex items-center h-full justify-between flex-col">
+        <div className="relative z-40 450px:p-8  px-2 py-8 flex items-center h-full justify-between flex-col">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
             className="text-white text-sm md:text-base font-montserrat text-center text-shadow-lg font-medium "

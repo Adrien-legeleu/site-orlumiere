@@ -21,6 +21,7 @@ const config: Config = {
       screens: {
         "450px": "450px",
         "550px": "550px",
+        "380px": "380px",
       },
       fontFamily: {
         montserrat: ["Montserrat"],

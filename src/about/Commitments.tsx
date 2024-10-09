@@ -67,7 +67,7 @@ export function Commitments() {
 
   return (
     <div className="space-y-12 mt-20">
-      <h2 className="text-5xl text-center  font-orbitron tracking-wider text-black/80 dark:text-white/80 font-semibold">
+      <h2 className="text-4xl text-center  font-orbitron tracking-wider text-black/80 dark:text-white/80 font-semibold">
         Nos engagements
       </h2>
       <div className="grid font-montserrat grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 relative z-10 py-10 max-w-7xl mx-auto">
