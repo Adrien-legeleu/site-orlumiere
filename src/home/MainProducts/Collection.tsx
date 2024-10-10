@@ -9,7 +9,7 @@ export function Collection() {
     <Link
       href="/collections"
       className="grid grid-cols-1 lg:grid-cols-6 gap-4 max-w-7xl mx-auto w-full h-full p-3 "
-      style={{ height: "calc(100vh - 80px)" }}
+      style={{ height: "calc(100vh - 80px)", maxHeight: "30rem" }}
     >
       {" "}
       <WobbleCard

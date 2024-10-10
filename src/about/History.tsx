@@ -174,7 +174,7 @@ export function History() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center px-4 py-16">
+    <div className="flex flex-col justify-center items-center  max-w-[1500px] mx-auto px-4 py-16">
       <Timeline data={data} />
     </div>
   );

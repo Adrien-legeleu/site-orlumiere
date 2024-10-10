@@ -82,7 +82,7 @@ export function Landing() {
   ];
 
   return (
-    <div className="h-full [perspective:1000px] relative b flex flex-col mx-auto w-full  items-start justify-start pt-32 ">
+    <div className="h-full [perspective:1000px]   max-w-[1500px]  relative b flex flex-col mx-auto w-full  items-start justify-start pt-32 ">
       <Tabs tabs={tabs} />
     </div>
   );

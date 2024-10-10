@@ -18,7 +18,7 @@ export const Landing = () => {
   }, []);
   return (
     <div
-      className="flex items-center justify-center gap-20 pt-20 h-screen w-full bg-[url(/images/WhiteBg.jpg)] dark:bg-black dark:bg-[url(/)] md:bg-center flex-col"
+      className="flex items-center justify-center gap-20 pt-20 h-screen w-full bg-[url(/images/WhiteBg.jpg)] bg-cover dark:bg-black dark:bg-[url(/)] md:bg-center flex-col"
       style={{ backgroundPosition: bgPosition }}
     >
       <Spotlight

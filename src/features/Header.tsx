@@ -19,7 +19,7 @@ export const Header = () => {
   };
 
   return (
-    <div className="w-full z-[100] absolute top-0 left-0 py-4 px-8 flex items-center justify-between font-montserrat">
+    <div className="w-full z-[100] absolute top-0 left-0 py-4 px-8 flex items-center justify-between font-montserrat  max-w-[1536px] 2xl:left-1/2 2xl:-translate-x-1/2 ">
       <h1 className=" z-50 text-2xl 450px:text-3xl tracking-wide pt-1 font-orbitron">
         Or&Lumière
       </h1>

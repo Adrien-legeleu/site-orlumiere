@@ -38,7 +38,7 @@ const ReviewCard = ({
 
 export function Notice() {
   return (
-    <div className="relative flex h-screen mt-32 w-full flex-col  rounded-lg bg-background px-4">
+    <div className="relative flex h-screen mt-32 w-full flex-col  rounded-lg bg-background px-4 max-w-[1500px] mx-auto">
       <h2 className="text-center font-medium tracking-wider text-2xl sm:text-4xl mb-16 font-orbitron">
         Ce qu&#39;ils disent sur nous
       </h2>
