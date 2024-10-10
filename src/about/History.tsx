@@ -13,7 +13,7 @@ export function History() {
             et d&#39;artisanat, a ouvert sa première boutique à Paris 🏙️,
             offrant des créations uniques et faites à la main 🖐️💍.
           </p>
-          <div className="md:grid flex md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             <Image
               src="/images/history (1).jpeg"
               alt="startup template"
@@ -40,7 +40,7 @@ export function History() {
             💎 En 2005, nous avons brillé au Salon International des Bijoux ✨,
             présentant notre première collection qui a captivé le public 👏.
           </p>
-          <div className="md:grid flex md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             <Image
               src="/images/history (4).jpeg"
               alt="salon international"
@@ -68,7 +68,7 @@ export function History() {
             ventes en ligne et collaborant avec des boutiques à l&#39;étranger.
             L&#39;aventure internationale commence !
           </p>
-          <div className="md:grid flex md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             <Image
               src="/images/international.jpg"
               alt="engagement éthique"
@@ -96,7 +96,7 @@ export function History() {
             l&#39;éthique 💚, en privilégiant des matériaux durables et en
             soutenant les artisans locaux 👩‍🎨👨‍🎨.
           </p>
-          <div className="md:grid flex md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             <Image
               src="/images/history (1).jpg"
               alt="engagement éthique"
@@ -124,7 +124,7 @@ export function History() {
             l&#39;innovation et le design 💡, marquant une étape importante dans
             notre parcours 🚀.
           </p>
-          <div className="md:grid flex md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             <Image
               src="/images/reward.jpg"
               alt="salon international"
@@ -152,7 +152,7 @@ export function History() {
             continuons de créer avec passion tout en restant fidèles à notre
             mission de qualité et d&#39;authenticité 🖤.
           </p>
-          <div className="md:grid flex md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             <Image
               src="/images/vision.jpg"
               alt="vision 1"
