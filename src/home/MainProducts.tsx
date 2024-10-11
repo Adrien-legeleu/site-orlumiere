@@ -45,7 +45,7 @@ const content = [
   },
 ];
 
-export function MainProducts() {
+export default function MainProducts() {
   return (
     <div className="max-w-[1500px] mx-auto">
       <StickyScroll content={content} />

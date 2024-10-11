@@ -5,7 +5,7 @@ import { FaHandshake, FaRegThumbsUp, FaRecycle, FaMedal } from "react-icons/fa";
 import { TbHours24 } from "react-icons/tb";
 import { MdAssistant } from "react-icons/md";
 
-export function Commitments() {
+export default function Commitments() {
   const features = [
     {
       title: "Qualité Supérieure",

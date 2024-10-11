@@ -1,5 +1,6 @@
 import Marquee from "@src/components/ui/marquee";
 import { cn } from "lib/utils";
+import Image from "next/image";
 
 const ReviewCard = ({
   img,
@@ -23,7 +24,13 @@ const ReviewCard = ({
       )}
     >
       <div className="flex flex-row items-center gap-2 ">
-        <img className="rounded-full" width="40" height="40" alt="" src={img} />
+        <Image
+          className="rounded-full"
+          width="40"
+          height="40"
+          alt=""
+          src={img}
+        />
         <div className="flex flex-col">
           <figcaption className="text-xl font-medium dark:text-white">
             {name}
@@ -36,7 +43,7 @@ const ReviewCard = ({
   );
 };
 
-export function Notice() {
+export default function Notice() {
   return (
     <div className="relative flex h-screen mt-32 w-full flex-col  rounded-lg bg-background px-4 max-w-[1500px] mx-auto">
       <h2 className="text-center font-medium tracking-wider text-2xl sm:text-4xl mb-16 font-orbitron">

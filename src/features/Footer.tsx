@@ -13,7 +13,7 @@ import {
   AccordionTrigger,
 } from "@src/components/ui/accordion";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <div className="pt-28 pb-5 xl:px-32 lg:px-24 px-12 w-full space-y-8 font-montserrat  max-w-[1500px] mx-auto">
       <div className="flex flex-col lg:flex-row gap-10 lg:gap-4 items-center justify-center lg:justify-between">
@@ -116,3 +116,4 @@ export const Footer = () => {
     </div>
   );
 };
+export default Footer;

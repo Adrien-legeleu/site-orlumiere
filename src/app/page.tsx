@@ -1,6 +1,26 @@
-import { Footer } from "@src/features/Footer";
+import dynamic from "next/dynamic";
 import { Header } from "@src/features/Header";
-import { Description, Landing, MainProducts, Notice } from "@src/home";
+import { Landing } from "@src/home";
+
+const Description = dynamic(
+  () => import("../home/Description").then((mod) => mod.default),
+  { ssr: false }
+);
+
+const Footer = dynamic(
+  () => import("@src/features/Footer").then((mod) => mod.default),
+  { ssr: false }
+);
+
+const MainProducts = dynamic(
+  () => import("@src/home/MainProducts").then((mod) => mod.default),
+  { ssr: false }
+);
+
+const Notice = dynamic(
+  () => import("@src/home/Notice").then((mod) => mod.default),
+  { ssr: false }
+);
 
 export default function Home() {
   return (

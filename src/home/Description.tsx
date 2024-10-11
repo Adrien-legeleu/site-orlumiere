@@ -1,4 +1,4 @@
-export const Description = () => {
+const Description = () => {
   return (
     <div className="h-screen w-full bg-gradient-to-b from-[#DED5CE] from-8% to-white to-45% dark:bg-black dark:bg-none">
       <div className="flex-col flex items-center justify-center max-w-[700px] h-full m-auto gap-28 px-6 450px:px-12 md:p-0">
@@ -15,3 +15,4 @@ export const Description = () => {
     </div>
   );
 };
+export default Description;
