@@ -60,7 +60,7 @@ export function History() {
       ),
     },
     {
-      title: "2010 - Expansion à l&#39;International",
+      title: "2010 - Expansion à l'International",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-lg tracking-widest leading-10 font-medium">
