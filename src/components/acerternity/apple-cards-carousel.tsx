@@ -215,7 +215,6 @@ export const Card = ({
         <BlurImage
           src={card.src}
           alt={card.title}
-          fill
           className="object-cover absolute z-10 inset-0"
         />
       </motion.button>
@@ -223,14 +222,7 @@ export const Card = ({
   );
 };
 
-export const BlurImage = ({
-  height,
-  width,
-  src,
-  className,
-  alt,
-  ...rest
-}: ImageProps) => {
+export const BlurImage = ({ src, className, alt, ...rest }: ImageProps) => {
   const [isLoading, setLoading] = useState(true);
 
   return (
