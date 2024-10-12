@@ -44,7 +44,7 @@ export const Tabs = ({
       >
         {propTabs.map((tab, idx) => (
           <button
-            key={tab.title?.toString()} // use .toString() if ReactNode or string
+            key={`${tab.value}-${idx}`}
             onClick={() => {
               moveSelectedTabToTop(idx);
             }}

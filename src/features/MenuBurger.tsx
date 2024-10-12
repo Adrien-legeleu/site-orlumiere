@@ -23,8 +23,9 @@ export const MenuBurger = ({ isActive, toggleActive }: IMenuBurgerProps) => {
     <div className="lg:hidden">
       <div>
         <button
-          onClick={toggleActive} // Ajout de l'événement onClick pour toggleActive
+          onClick={toggleActive}
           className="relative group flex items-center justify-center"
+          aria-label={isActive ? "Fermer le menu" : "Ouvrir le menu"} // Ajout de l'aria-label pour rendre le bouton accessible
         >
           <div className="relative flex items-center justify-center w-[20px] h-[20px]">
             <div className="flex flex-col justify-between w-full h-full transform transition-all duration-300 origin-center overflow-hidden">
@@ -44,7 +45,6 @@ export const MenuBurger = ({ isActive, toggleActive }: IMenuBurgerProps) => {
                 }`}
               ></div>
 
-              {/* Croix apparaissant au focus (ouverture du menu) */}
               <div
                 className={`absolute items-center justify-between transform transition-all duration-500 top-2.5 ${
                   isActive
@@ -76,7 +76,7 @@ export const MenuInterface = ({ isActive, toggleActive }: IMenuBurgerProps) => {
     <div className="lg:hidden z-40">
       {/* Menu sliding animation */}
       <motion.div
-        className="fixed flex-col space-y-14 bottom-0 left-1/2 overflow-y-scroll bg-white dark:bg-gray-950 dark:shadow-menuBurger rounded-t-[2rem] w-screen max-w-2xl h-2/3 py-8 px-8 550px:px-16 transform"
+        className="fixed flex-col space-y-14 bottom-0 left-1/2 overflow-y-scroll bg-white dark:bg-gray-950 dark:shadow-menuBurger rounded-t-[2rem] w-screen max-w-2xl h-2/3 pt-8 pb-12 px-8 550px:px-16 transform"
         style={{ scrollbarWidth: "none" }}
         initial={{ y: "100%", x: "-50%" }} // Position initiale en dehors de l'écran
         animate={isActive ? { y: "0%", x: "-50%" } : { y: "100%", x: "-50%" }} // Animation ouverture/fermeture
@@ -94,7 +94,7 @@ export const MenuInterface = ({ isActive, toggleActive }: IMenuBurgerProps) => {
               Home
             </h3>
           </Link>
-          <div className="550xp:flex grid grid-cols-2 450px:w-2/3 380px:w-4/5 w-full 550px:flex-row 450px:gap-5 gap-4 mt-5">
+          <div className="flex 550px:flex-row flex-col 550px:items-center justify-center  w-full  gap-5  mt-5">
             <Link href="/#presentation">
               <Button>Présentation</Button>
             </Link>
@@ -134,7 +134,7 @@ export const MenuInterface = ({ isActive, toggleActive }: IMenuBurgerProps) => {
               A propos de nous
             </h3>
           </Link>
-          <div className="flex flex-row gap-5 mt-5">
+          <div className="flex 550px:flex-row flex-col 550px:items-center justify-center gap-5 mt-5">
             <Link href="/about/#history">
               <Button>Notre histoire</Button>
             </Link>

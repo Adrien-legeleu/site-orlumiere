@@ -31,6 +31,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     <div
       className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
       ref={containerRef}
+      style={{ position: "relative" }}
     >
       <div className="max-w-7xl mx-auto w-full pt-32 px-4 md:px-8 lg:px-10 space-y-12">
         <h2 className="text-3xl md:text-6xl mb-4 text-center text-black/70 dark:text-white/70 font-orbitron ">

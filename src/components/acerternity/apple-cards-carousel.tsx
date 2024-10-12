@@ -232,6 +232,7 @@ export const BlurImage = ({
   ...rest
 }: ImageProps) => {
   const [isLoading, setLoading] = useState(true);
+
   return (
     <Image
       className={cn(
@@ -241,12 +242,14 @@ export const BlurImage = ({
       )}
       onLoad={() => setLoading(false)}
       src={src}
-      width={width}
-      height={height}
+      fill
+      sizes="(max-width: 640px) 100vw, 
+            (max-width: 768px) 50vw, 
+            33vw" // Cette ligne définit comment l'image doit se comporter sur différentes tailles d'écran
       loading="lazy"
       decoding="async"
       blurDataURL={typeof src === "string" ? src : undefined}
-      alt={alt ? alt : "Background of a beautiful view"}
+      alt={alt ? alt : "Image description"}
       {...rest}
     />
   );

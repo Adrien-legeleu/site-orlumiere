@@ -1,14 +1,20 @@
 import Marquee from "@src/components/ui/marquee";
 import { cn } from "lib/utils";
-import Image from "next/image";
+
+function getRandomGradient() {
+  // Génère deux couleurs aléatoires pour le dégradé
+  const colors = [
+    `#${Math.floor(Math.random() * 16777215).toString(16)}`,
+    `#${Math.floor(Math.random() * 16777215).toString(16)}`,
+  ];
+  return `linear-gradient(135deg, ${colors[0]}, ${colors[1]})`;
+}
 
 const ReviewCard = ({
-  img,
   name,
   username,
   body,
 }: {
-  img: string;
   name: string;
   username: string;
   body: string;
@@ -16,21 +22,19 @@ const ReviewCard = ({
   return (
     <figure
       className={cn(
-        "relative h-52 flex justify-between flex-col  w-full cursor-pointer overflow-hidden rounded-xl border p-4",
+        "relative h-52 flex justify-between flex-col w-full cursor-pointer overflow-hidden rounded-xl border p-4",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
       )}
     >
-      <div className="flex flex-row items-center gap-2 ">
-        <Image
-          className="rounded-full"
-          width="40"
-          height="40"
-          alt=""
-          src={img}
-        />
+      <div className="flex flex-row items-center gap-2">
+        {/* Remplacement de l'image par une div avec un dégradé aléatoire */}
+        <div
+          className="rounded-full w-[40px] h-[40px]"
+          style={{ background: getRandomGradient() }}
+        ></div>
         <div className="flex flex-col">
           <figcaption className="text-xl font-medium dark:text-white">
             {name}
@@ -45,7 +49,7 @@ const ReviewCard = ({
 
 export default function Notice() {
   return (
-    <div className="relative flex h-screen mt-32 w-full flex-col  rounded-lg bg-background px-4 max-w-[1500px] mx-auto">
+    <div className="relative flex h-screen mt-32 w-full flex-col rounded-lg bg-background px-4 max-w-[1500px] mx-auto">
       <h2 className="text-center font-medium tracking-wider text-2xl sm:text-4xl mb-16 font-orbitron">
         Ce qu&#39;ils disent sur nous
       </h2>
@@ -90,62 +94,52 @@ const reviews = [
   {
     name: "Sophie",
     username: "@sophie",
-    body: "Les bijoux d'Or & Lumière sont absolument magnifiques. Chaque pièce est unique et d'une qualité exceptionnelle. Je suis ravie de mon achat.",
-    img: "https://avatar.vercel.sh/sophie",
+    body: "Les bijoux d'Or & Lumière sont absolument magnifiques.",
   },
   {
     name: "Lucas",
     username: "@lucas",
-    body: "Je suis impressionné par le design et la finesse des bijoux. Or & Lumière propose des pièces incroyablement élégantes. Un service irréprochable !",
-    img: "https://avatar.vercel.sh/lucas",
+    body: "Je suis impressionné par le design et la finesse des bijoux.",
   },
   {
     name: "Emma",
     username: "@emma",
-    body: "L'attention aux détails et le soin apporté à chaque bijou sont impressionnants. Je recommande vivement Or & Lumière.",
-    img: "https://avatar.vercel.sh/emma",
+    body: "L'attention aux détails est impressionnante.",
   },
   {
     name: "Paul",
     username: "@paul",
-    body: "Le bracelet que j'ai commandé est sublime. Or & Lumière a vraiment su capturer l'élégance dans chaque création.",
-    img: "https://avatar.vercel.sh/paul",
+    body: "Le bracelet que j'ai commandé est sublime.",
   },
   {
     name: "Clara",
     username: "@clara",
-    body: "Je suis sans voix. Les bijoux d'Or & Lumière sont d'une beauté inégalée. Je reçois des compliments à chaque fois que je porte ma bague.",
-    img: "https://avatar.vercel.sh/clara",
+    body: "Je suis sans voix. Les bijoux sont d'une beauté inégalée.",
   },
   {
     name: "Antoine",
     username: "@antoine",
-    body: "Je cherchais un cadeau spécial, et j'ai trouvé exactement ce que je voulais chez Or & Lumière. Un service exceptionnel et des bijoux raffinés.",
-    img: "https://avatar.vercel.sh/antoine",
+    body: "Je cherchais un cadeau spécial, et je l'ai trouvé.",
   },
   {
     name: "Camille",
     username: "@camille",
-    body: "Chaque bijou est une véritable œuvre d'art. Or & Lumière sait comment combiner élégance et modernité. Je suis conquise.",
-    img: "https://avatar.vercel.sh/camille",
+    body: "Chaque bijou est une véritable œuvre d'art.",
   },
   {
     name: "Louis",
     username: "@louis",
-    body: "La qualité des matériaux utilisés est impressionnante. Mon collier d'Or & Lumière est parfait pour toutes les occasions.",
-    img: "https://avatar.vercel.sh/louis",
+    body: "La qualité des matériaux utilisés est impressionnante.",
   },
   {
     name: "Inès",
     username: "@ines",
-    body: "Je suis tombée amoureuse de mon pendentif dès que je l'ai vu. Or & Lumière offre des pièces incroyablement élégantes et originales.",
-    img: "https://avatar.vercel.sh/ines",
+    body: "Je suis tombée amoureuse de mon pendentif dès que je l'ai vu.",
   },
   {
     name: "Nicolas",
     username: "@nicolas",
-    body: "Le service client est fantastique et les bijoux sont encore plus beaux en vrai. Or & Lumière est définitivement mon endroit préféré pour les bijoux.",
-    img: "https://avatar.vercel.sh/nicolas",
+    body: "Le service client est fantastique et les bijoux sont magnifiques.",
   },
 ];
 

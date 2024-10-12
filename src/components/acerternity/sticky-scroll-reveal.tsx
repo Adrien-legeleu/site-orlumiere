@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "lib/utils";
@@ -17,6 +17,23 @@ export const StickyScroll = ({
   contentClassName?: string;
 }) => {
   const [activeCard, setActiveCard] = React.useState(0);
+
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 640); // Détection de la largeur d'écran
+    };
+
+    // Exécuter au montage
+    handleResize();
+
+    // Ajouter un event listener pour détecter les changements de taille de fenêtre
+    window.addEventListener("resize", handleResize);
+
+    // Nettoyer l'event listener lors du démontage du composant
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // Typing the ref as a div element to avoid using 'any'
   const ref = useRef<HTMLDivElement>(null);
@@ -65,8 +82,8 @@ export const StickyScroll = ({
       // animate={{
       //   backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       // }}
-      // style={{ scrollbarWidth:  }}
-      className="h-[30rem]  overflow-y-scroll   flex justify-center relative space-x-10 rounded-md "
+      style={{ scrollbarWidth: isSmallScreen ? "none" : "auto" }}
+      className="h-[30rem]   overflow-y-scroll   flex justify-center relative space-x-10 rounded-md "
       ref={ref}
     >
       <div className="div relative flex items-start pl-8 ">
