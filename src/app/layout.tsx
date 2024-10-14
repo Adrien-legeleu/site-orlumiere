@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Or&Lumière",
-  description: "Le meilleur des bijoux est  sur Or&Lumière",
+  description: "Le meilleur des bijoux sur Or&Lumière !",
 };
 
 export default function RootLayout({
